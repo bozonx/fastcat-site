@@ -1,0 +1,27 @@
+{
+  "name": "fastcat-site",
+  "version": "0.1.0",
+  "description": "FastCat - AI-powered video editor",
+  "type": "module",
+  "author": "(Ivan Kozyrin <ipkozyrin@gmail.com>)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "pagefind": "pagefind --verbose --site ./dist",
+    "build": "vitepress build src && pnpm pagefind",
+    "preview": "vitepress preview src"
+  },
+  "dependencies": {
+    "@midzer/tobii": "^3.0.0",
+    "pagefind": "^1.4.0",
+    "vitepress": "2.0.0-alpha.9",
+    "vitepress-sls-blog-tmpl": "^0.16.8"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
+  }
+}

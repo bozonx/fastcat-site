@@ -1,0 +1,17 @@
+body: |-
+  lang: "ru-RU"
+  title: "FastCat"
+  description: "FastCat - Видео редактор с использованием ИИ."
+  siteTitle: "FastCat"
+  publisher:
+    name: "FastCat"
+    url: "${config.siteUrl}/${localeIndex}"
+    logo: "${config.siteUrl}/img/home-logo.webp"
+  footer:
+    message: "Копирование разрешено только со ссылкой на источник."
+    copyright: "Copyright © 2024-present Antifem movement."
+  nav:
+    - text: "📖 Руководство"
+      link: "${localeIndex}/doc"
+    - text: "📢 Соц сети"
+      link: "/${localeIndex}/page/links"

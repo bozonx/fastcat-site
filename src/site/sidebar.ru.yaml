@@ -1,0 +1,8 @@
+body: |-
+  doc:
+    - text: "FastCat"
+      items:
+        - text: "Введение"
+          link: ""
+        - text: "О проекте"
+          link: "about"

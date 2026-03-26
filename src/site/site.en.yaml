@@ -1,0 +1,17 @@
+body: |-
+  lang: "en-US"
+  title: "FastCat"
+  description: "FastCat - AI-powered video editor."
+  siteTitle: "FastCat"
+  publisher:
+    name: "FastCat"
+    url: "${config.siteUrl}/${localeIndex}"
+    logo: "${config.siteUrl}/img/home-logo.webp"
+  footer:
+    message: "Copying is allowed only with a link to the source."
+    copyright: "Copyright © 2024-present Antifem movement."
+  nav:
+    - text: "📖 Project"
+      link: "${localeIndex}/doc"
+    - text: "📢 Social media"
+      link: "/${localeIndex}/page/links"

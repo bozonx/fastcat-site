@@ -1,0 +1,146 @@
+i18n:
+  structure: multiple_folders
+  locales: [en, ru]
+  default_locale: en
+
+backend:
+  name: github
+  repo: bozonx/fastcat-site
+  use_graphql: true
+  # site_domain: 5ab4c367-3592-4361-a4b8-ccd46514c967
+
+site_url: https://fastcat.pro
+media_folder: /src/public/media
+public_folder: /media
+
+media_library:
+  name: default
+  config:
+    slugify_filename: true
+    # 10 mb
+    max_file_size: 10240000
+    transformations:
+      raster_image:
+        format: webp
+        quality: 65 # default: 85
+        width: 1920 # default: original size
+        height: 1920 # default: original size
+      svg:
+        optimize: true
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+output:
+  omit_empty_optional_fields: true
+
+collections:
+  - name: doc
+    label: Docs
+    label_singular: Doc
+    description: All the docs
+    i18n: true
+    folder: "src"
+    path: "doc/{{slug}}"
+    preview_path: "/{{locale}}/doc/{{slug}}"
+    media_folder: /src/public/media
+    public_folder: /media
+    create: true
+    summary: "{{title}} | {{commit_date}} | {{commit_author}}"
+    sortable_fields:
+      fields: ["commit_date", "title", "commit_author"]
+      default:
+        field: commit_date
+        direction: descending # default: ascending
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        preview: false
+        i18n: true
+      - label: "Description (please do less than 500 chars)"
+        name: "description"
+        widget: "text"
+        required: false
+        preview: false
+        i18n: true
+      - label: "Canonical URL ('self' means self-canonical)"
+        name: "canonical"
+        widget: "string"
+        default: "self"
+        required: false
+        preview: false
+        i18n: true
+      - label: "JSON-LD in yaml format. Add some fields to the generated JSON-LD or make full JSON-LD"
+        name: "jsonLd"
+        widget: code
+        required: false
+        preview: false
+        i18n: true
+        output_code_only: true
+        default_language: yaml
+        allow_language_selection: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+
+singletons:
+  - name: sidebar
+    label: Sidebar translation
+    file: "src/site/sidebar.{{locale}}.yaml"
+    i18n: true
+    editor:
+      preview: false
+    fields:
+      - label: "Body"
+        name: "body"
+        i18n: true
+        widget: code
+        output_code_only: true
+        default_language: yaml
+        allow_language_selection: false
+  - name: site
+    label: Site translations
+    file: "src/site/site.{{locale}}.yaml"
+    i18n: true
+    editor:
+      preview: false
+    fields:
+      - label: "Body"
+        name: "body"
+        i18n: true
+        widget: code
+        output_code_only: true
+        default_language: yaml
+        allow_language_selection: false
+  - name: links
+    label: Links
+    file: "src/{{locale}}/page/links.md"
+    preview_path: "/{{locale}}/page/{{slug}}"
+    i18n: true
+    fields:
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: false
+        preview: false
+        i18n: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+  - name: index
+    label: Index
+    file: "src/{{locale}}/index.md"
+    preview_path: "/{{locale}}"
+    i18n: true
+    editor:
+      preview: false
+    fields:
+      - label: "Body"
+        name: "body"
+        i18n: true
+        widget: code
+        output_code_only: true
