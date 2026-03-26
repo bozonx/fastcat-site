@@ -12,7 +12,7 @@ export default async () => {
       logo: "/img/logo.svg",
 
       // specific for this site
-      // blogUrl: "https://blog.fastcat.video",
+      blogUrl: "https://blog.fastcat.video",
     },
     head: [
       // do not recognize telephone numbers on the page
