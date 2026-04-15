@@ -24,6 +24,8 @@ body: |-
           link: "terminology"
         - text: "Интерфейс"
           link: "interface"
+        - text: "Мобильная версия"
+          link: "mobile-version"
         - text: "Менеджер файлов"
           link: "media-management"
         - text: "Таймлайн"
