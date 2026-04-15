@@ -11,7 +11,7 @@ body: |-
     message: "Копирование разрешено только со ссылкой на источник."
     copyright: "Copyright © 2026-present FastCat."
   nav:
-    - text: "🖥️ Приложение"
+    - text: "🖥️ FastCat Web"
       link: "https://app.fastcat.video"
     - text: "📖 Гид"
       link: "${localeIndex}/guide/getting-started"

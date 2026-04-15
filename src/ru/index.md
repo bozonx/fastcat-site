@@ -19,8 +19,8 @@ const hero = {
   actions: [
     {
       theme: "brand",
-      text: "🚀 Начать монтаж",
-      link: "/ru/guide/getting-started",
+      text: "🚀 Установить бесплатно",
+      link: "#download",
     },
     {
       theme: "alt",
@@ -77,6 +77,60 @@ const features = [
 
 <SiteHome :hero="hero" :features="features">
 </SiteHome>
+
+<div id="download"></div>
+
+## Скачать FastCat
+
+Выберите вашу платформу, чтобы начать работу с видеоредактором.
+
+<div class="download-grid">
+
+### 🤖 Android
+- [**Google Play**](https://play.google.com/store/apps/details?id=video.fastcat.app)
+- [**RuStore**](https://www.rustore.ru/catalog/app/video.fastcat.app)
+- [**Инструкция и APK**](/ru/guide/installation#установка-в-android)
+
+### 🍎 iOS & macOS
+- [**App Store**](https://apps.apple.com/app/fastcat-video-editor/id123456789)
+
+### 🪟 Windows
+- [**Microsoft Store**](https://apps.microsoft.com/store/detail/fastcat/9NBLGGH42R)
+- [**Скачать .exe**](https://github.com/bozonx/fastcat/releases/latest)
+- [**Подробнее**](/ru/guide/installation#установка-в-windows)
+
+### 🐧 Linux
+- [**Инструкция по установке**](/ru/guide/installation#установка-в-linux) (Snap, Flatpak, PPA)
+
+### 🐳 Docker & Web
+- [**Docker запуск**](/ru/guide/installation#установка-с-помощью-docker)
+- [**Браузер (OPFS)**](/ru/guide/installation#требования-к-браузеру-opfs)
+
+</div>
+
+<style>
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.download-grid h3 {
+  margin-top: 0 !important;
+  border-bottom: 2px solid var(--vp-c-brand);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.download-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.download-grid li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+</style>
 
 ## Что еще добавить на лэндинг?
 
