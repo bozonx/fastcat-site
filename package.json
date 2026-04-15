@@ -12,16 +12,20 @@
     "preview": "vitepress preview src"
   },
   "dependencies": {
-    "@midzer/tobii": "^3.0.0",
+    "@midzer/tobii": "^3.2.0",
+    "fastcat": "link:../../../../home/ivan/.local/share/pnpm/global/5/node_modules/fastcat",
     "pagefind": "^1.4.0",
-    "vitepress": "2.0.0-alpha.9",
-    "vitepress-sls-blog-tmpl": "^0.16.8"
+    "vitepress": "2.0.0-alpha.17",
+    "vitepress-sls-blog-tmpl": "link:../../../../home/ivan/.local/share/pnpm/global/5/node_modules/vitepress-sls-blog-tmpl"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
       "esbuild",
       "sharp",
       "workerd"
-    ]
+    ],
+    "overrides": {
+      "vitepress-sls-blog-tmpl": "link:../../../../home/ivan/.local/share/pnpm/global/5/node_modules/vitepress-sls-blog-tmpl"
+    }
   }
 }

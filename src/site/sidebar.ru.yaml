@@ -1,8 +1,36 @@
 body: |-
   doc:
-    - text: "FastCat"
+    - text: "Начало работы"
       items:
         - text: "Введение"
           link: ""
+        - text: "Концепция"
+          link: "concepts"
         - text: "О проекте"
           link: "about"
+
+    - text: "Руководство"
+      items:
+        - text: "Быстрый старт"
+          link: "../guide/getting-started"
+        - text: "Интерфейс"
+          link: "../guide/interface"
+        - text: "Медиа-менеджер"
+          link: "../guide/media-management"
+        - text: "Таймлайн"
+          link: "../guide/timeline"
+        - text: "Эффекты и переходы"
+          link: "../guide/effects-transitions"
+        - text: "ИИ возможности"
+          link: "../guide/ai-features"
+        - text: "Экспорт"
+          link: "../guide/export"
+
+    - text: "Полезное"
+      items:
+        - text: "Сценарии использования"
+          link: "../page/use-cases"
+        - text: "Терминология"
+          link: "terminology"
+        - text: "ЧАВО"
+          link: "faq"
