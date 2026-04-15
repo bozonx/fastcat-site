@@ -20,7 +20,7 @@ const hero = {
     {
       theme: "brand",
       text: `📃 О проекте`,
-      link: `/${localeIndex.value}/doc/about`,
+      link: `/${localeIndex.value}/guide/about`,
     },
     {
       theme: "alt",
@@ -35,14 +35,14 @@ const features = [
     title: "Быстрое создание публикаций с помощью ИИ",
     details: "Используйте возможности искусственного интеллекта для создания качественного контента",
     linkText: "Читать о",
-    link: "/ru/doc/ai-assistant",
+    link: "/ru/doc/ai-features",
   },
   {
     icon: "📖",
     title: "Подборки свежих новостей",
     details: "описание",
     linkText: "Читать о",
-    link: "/ru/doc/news-compilations",
+    link: "/ru/doc/index",
   },
 ]
 </script>

@@ -11,7 +11,9 @@ body: |-
     message: "Копирование разрешено только со ссылкой на источник."
     copyright: "Copyright © 2024-present Antifem movement."
   nav:
-    - text: "📖 Руководство"
+    - text: "📖 Гид"
+      link: "${localeIndex}/guide/getting-started"
+    - text: "📚 Документация"
       link: "${localeIndex}/doc"
     - text: "📢 Соц сети"
       link: "/${localeIndex}/page/links"
