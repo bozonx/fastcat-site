@@ -24,6 +24,11 @@ const hero = {
     },
     {
       theme: "alt",
+      text: "🌐 Открыть в браузере",
+      link: "https://app.fastcat.video",
+    },
+    {
+      theme: "alt",
       text: "📚 Документация",
       link: "/ru/doc/index",
     },
@@ -103,6 +108,7 @@ const features = [
 - [**Инструкция по установке**](/ru/guide/installation#установка-в-linux) (Snap, Flatpak, PPA)
 
 ### 🐳 Docker & Web
+- [**Открыть в браузере**](https://app.fastcat.video) — Веб-версия
 - [**Docker запуск**](/ru/guide/installation#установка-с-помощью-docker)
 - [**Браузер (OPFS)**](/ru/guide/installation#требования-к-браузеру-opfs)
 
