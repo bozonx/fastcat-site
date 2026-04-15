@@ -9,7 +9,7 @@ body: |-
     logo: "${config.siteUrl}/img/home-logo.webp"
   footer:
     message: "Copying is allowed only with a link to the source."
-    copyright: "Copyright © 2024-present Antifem movement."
+    copyright: "Copyright © 2026-present FastCat."
   nav:
     - text: "📖 Project"
       link: "${localeIndex}/doc"

@@ -6,4 +6,4 @@ lastUpdated: false
 next: false
 ---
 
-# Наши ссылки и аккаунты в соц сетях
+# О нас

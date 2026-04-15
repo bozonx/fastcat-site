@@ -9,11 +9,13 @@ body: |-
     logo: "${config.siteUrl}/img/home-logo.webp"
   footer:
     message: "Копирование разрешено только со ссылкой на источник."
-    copyright: "Copyright © 2024-present Antifem movement."
+    copyright: "Copyright © 2026-present FastCat."
   nav:
+    - text: "🖥️ Приложение"
+      link: "https://app.fastcat.video"
     - text: "📖 Гид"
       link: "${localeIndex}/guide/getting-started"
     - text: "📚 Документация"
       link: "${localeIndex}/doc"
-    - text: "📢 Соц сети"
-      link: "/${localeIndex}/page/links"
+    - text: "😺 О нас"
+      link: "${localeIndex}/page/about-us"
