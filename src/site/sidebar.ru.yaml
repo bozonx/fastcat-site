@@ -12,7 +12,8 @@ body: |-
           link: "use-cases"
         - text: "ЧАВО (FAQ)"
           link: "faq"
-
+    - text: "📚 Документация"
+      link: "../doc/index"
   doc:
     - text: "Справочник функций"
       items:
