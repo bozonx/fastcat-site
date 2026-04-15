@@ -17,7 +17,7 @@
 2. Откройте терминал в папке проекта.
 3. Запустите команду:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 4. Откройте браузер по адресу `http://localhost:3000`.
 
