@@ -8,6 +8,9 @@ body: |-
     url: "${config.siteUrl}/${localeIndex}"
     logo: "${config.siteUrl}/img/home-logo.webp"
   footer:
+    links:
+      - text: "🖥️ FastCat Web"
+        link: "https://app.fastcat.video"
     message: "Copying is allowed only with a link to the source."
     copyright: "Copyright © 2026-present FastCat."
   nav:

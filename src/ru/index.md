@@ -27,11 +27,6 @@ const hero = {
       text: "🌐 Открыть в браузере",
       link: "https://app.fastcat.video",
     },
-    {
-      theme: "alt",
-      text: "📚 Документация",
-      link: "/ru/doc/index",
-    },
   ],
 }
 const features = [
